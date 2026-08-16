@@ -13,14 +13,14 @@ export function Logo({ tone = "forest" }: { tone?: "forest" | "cream" }) {
   const color = tone === "cream" ? "text-cream" : "text-forest";
 
   return (
-    <Link href="/" className={cn("flex items-center gap-3", color)}>
+    <Link href="/" className={cn("flex min-w-0 items-center gap-2.5 sm:gap-3", color)}>
       <svg
-        width="38"
-        height="38"
+        width="34"
+        height="34"
         viewBox="0 0 38 38"
         fill="none"
         aria-hidden="true"
-        className="shrink-0"
+        className="h-8 w-8 shrink-0 sm:h-[38px] sm:w-[38px]"
       >
         <circle cx="19" cy="19" r="17.25" stroke="currentColor" strokeWidth="1.5" />
         <circle cx="19" cy="19" r="12" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 3" />
@@ -32,9 +32,9 @@ export function Logo({ tone = "forest" }: { tone?: "forest" | "cream" }) {
           strokeLinejoin="round"
         />
       </svg>
-      <span className="font-display text-[17px] leading-tight font-bold tracking-tight">
-        {siteConfig.name}
-        <span className="font-label block text-[10px] font-normal tracking-[0.2em] uppercase opacity-60">
+      <span className="min-w-0 flex-1 font-display text-[15px] leading-tight font-bold tracking-tight sm:text-[17px]">
+        <span className="block truncate">{siteConfig.name}</span>
+        <span className="font-label hidden truncate text-[10px] font-normal tracking-[0.2em] uppercase opacity-60 min-[380px]:block">
           Fresh Produce, NZ
         </span>
       </span>

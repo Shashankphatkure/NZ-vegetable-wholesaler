@@ -36,7 +36,7 @@ export function Navbar() {
         scrolled && "border-soil/10 shadow-[0_1px_0_rgba(23,34,28,0.06)]",
       )}
     >
-      <Container className="flex h-[76px] items-center justify-between">
+      <Container className="flex min-h-[76px] items-center justify-between gap-3 py-2">
         <Logo />
 
         <nav className="hidden items-center gap-9 lg:flex" aria-label="Primary">
@@ -72,7 +72,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-lg text-forest lg:hidden"
+          className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-forest lg:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
