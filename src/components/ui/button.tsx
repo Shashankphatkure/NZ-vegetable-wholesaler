@@ -9,11 +9,17 @@ const base =
   "group inline-flex items-center justify-center gap-2 rounded-full font-display font-semibold transition-all duration-300 ease-[var(--ease-produce)] focus-visible:outline-2 focus-visible:outline-leaf disabled:opacity-50 disabled:pointer-events-none";
 
 const variants: Record<Variant, string> = {
+  // brightness (not a fixed bg-* colour) so hover/press feedback works
+  // correctly no matter what background a caller passes via className —
+  // a fixed dark hover/active colour can end up matching an overridden
+  // text colour (e.g. the gold CTA button uses dark text), making the
+  // label vanish on press. Scaling brightness keeps text and background
+  // moving together, so contrast is preserved.
   primary:
-    "shadow-forest-soft bg-forest text-cream hover:bg-soil hover:shadow-none active:bg-soil",
+    "shadow-forest-soft bg-forest text-cream hover:shadow-none hover:brightness-90 active:brightness-75",
   secondary:
-    "bg-transparent text-forest border-2 border-forest hover:bg-forest hover:text-cream",
-  ghost: "bg-transparent text-forest px-0 hover:text-leaf",
+    "bg-transparent text-forest border-2 border-forest hover:bg-forest hover:text-cream active:brightness-90",
+  ghost: "bg-transparent text-forest px-0 hover:text-leaf active:text-leaf",
 };
 
 const sizes: Record<Size, string> = {
