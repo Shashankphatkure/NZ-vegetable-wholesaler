@@ -3,7 +3,13 @@ import { ArrowRight } from "lucide-react";
 import { ProduceImage } from "@/components/ui/produce-image";
 import type { Product } from "@/lib/types";
 
-export function ProductCard({ product }: { product: Product }) {
+export function ProductCard({
+  product,
+  priority = false,
+}: {
+  product: Product;
+  priority?: boolean;
+}) {
   return (
     <Link
       href={`/shop/${product.slug}`}
@@ -12,6 +18,7 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="relative aspect-[4/3] overflow-hidden">
         <ProduceImage
           imageKey={product.imageKey}
+          priority={priority}
           sizes="(min-width: 1024px) min(25vw, 300px), (min-width: 640px) 33vw, 50vw"
           className="transition-transform duration-500 ease-[var(--ease-produce)] group-hover:scale-105"
         />

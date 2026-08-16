@@ -73,8 +73,8 @@ export function ShopGrid() {
 
       {filtered.length > 0 ? (
         <div className="mt-10 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
-          {filtered.map((product) => (
-            <ProductCard key={product.slug} product={product} />
+          {filtered.map((product, i) => (
+            <ProductCard key={product.slug} product={product} priority={i < 4} />
           ))}
         </div>
       ) : (

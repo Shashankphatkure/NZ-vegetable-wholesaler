@@ -107,10 +107,11 @@ export function EnquiryForm({
       </div>
 
       <div className="mt-5">
-        <label className="mb-2 block text-[14px] font-semibold text-soil">
+        <label htmlFor="message" className="mb-2 block text-[14px] font-semibold text-soil">
           Message
         </label>
         <textarea
+          id="message"
           name="message"
           rows={5}
           required
