@@ -48,23 +48,23 @@ export const images: Record<string, ImageAsset> = {
   },
   catPotatoes: {
     url: "/images/catPotatoes.jpg",
-    alt: "Crates of fresh potatoes",
-    credit: "Potato crates — Wikimedia Commons",
+    alt: "A pile of fresh potatoes",
+    credit: "Client-supplied photography",
   },
   catOnions: {
     url: "/images/catOnions.jpg",
-    alt: "A mix of fresh onions",
-    credit: "Mixed onions — Wikimedia Commons",
+    alt: "Red, white and brown onions together",
+    credit: "Client-supplied photography",
   },
   catTomatoes: {
     url: "/images/catTomatoes.jpg",
-    alt: "Fresh tomatoes stacked at a market stall",
-    credit: "Fresh tomatoes stacked at market stall — Wikimedia Commons",
+    alt: "Fresh vine and cherry tomatoes",
+    credit: "Client-supplied photography",
   },
   catRoots: {
     url: "/images/catRoots.jpg",
-    alt: "A pile of fresh carrots",
-    credit: "Carrots of many colors — Wikimedia Commons",
+    alt: "Ginger, garlic, carrots and daikon together",
+    credit: "Client-supplied photography",
   },
   catGreens: {
     url: "/images/catGreens.jpg",
