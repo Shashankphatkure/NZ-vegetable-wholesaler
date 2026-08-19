@@ -81,110 +81,136 @@ export const images: Record<string, ImageAsset> = {
     alt: "Fresh cucumbers and red, green and yellow capsicum",
     credit: "Client-supplied photography",
   },
+  // ---- Product studio shots (client-supplied) ----
   prodAgriaPotato: {
     url: "/images/prodAgriaPotato.jpg",
-    alt: "A freshly harvested pile of potatoes",
-    credit: "Potato harvest, Meeden (2020) — Wikimedia Commons",
+    alt: "A single Agria potato",
+    credit: "Client-supplied photography",
+  },
+  prodMoonlightPotato: {
+    url: "/images/prodMoonlightPotato.jpg",
+    alt: "A single Moonlight potato",
+    credit: "Client-supplied photography",
+  },
+  prodMoonlightLargePotato: {
+    url: "/images/prodMoonlightLargePotato.jpg",
+    alt: "A single large Moonlight potato",
+    credit: "Client-supplied photography",
   },
   prodRedOnion: {
     url: "/images/prodRedOnion.jpg",
-    alt: "A fresh red onion",
-    credit: "Red Onion on White — Wikimedia Commons",
+    alt: "A whole red onion",
+    credit: "Client-supplied photography",
   },
-  prodTomato: {
-    url: "/images/prodTomato.jpg",
-    alt: "Fresh tomatoes",
-    credit: "Organic home-grown tomatoes — Wikimedia Commons",
-  },
-  prodGinger: {
-    url: "/images/prodGinger.jpg",
-    alt: "Fresh ginger root",
-    credit: "Fresh Ginger Root — Wikimedia Commons",
-  },
-  prodBroccoli: {
-    url: "/images/prodBroccoli.jpg",
-    alt: "A fresh head of broccoli",
-    credit: "Broccoli — Wikimedia Commons",
-  },
-  prodCoriander: {
-    url: "/images/prodCoriander.jpg",
-    alt: "Bunches of fresh coriander, Wellington, New Zealand",
-    credit: "Coriander bunches, Wellington, New Zealand — Wikimedia Commons",
-  },
-  prodCucumber: {
-    url: "/images/prodCucumber.jpg",
-    alt: "Fresh cucumbers on sale at a market",
-    credit: "Ryerson Market cucumbers on sale — Wikimedia Commons",
-  },
-  prodCarrot: {
-    url: "/images/prodCarrot.jpg",
-    alt: "A bunch of fresh carrots",
-    credit: "Bunch of carrots — Wikimedia Commons",
-  },
-  prodCauliflower: {
-    url: "/images/prodCauliflower.jpg",
-    alt: "A fresh whole cauliflower",
-    credit: "Cauliflower from San Francisco farmers market — Wikimedia Commons",
-  },
-  prodSilverbeet: {
-    url: "/images/prodSilverbeet.jpg",
-    alt: "Fresh rainbow chard (silverbeet) leaves",
-    credit: "Rainbow chard for sale at the Campbell farmers market — Wikimedia Commons",
-  },
-  prodCurlyKale: {
-    url: "/images/prodCurlyKale.jpg",
-    alt: "Fresh curly kale leaves",
-    credit: "Brassica oleracea var. acephala — Wikimedia Commons",
-  },
-  prodBlackKale: {
-    url: "/images/prodBlackKale.jpg",
-    alt: "Fresh black kale (cavolo nero / lacinato kale)",
-    credit: "Lacinato kale — Wikimedia Commons",
-  },
-  prodSpinach: {
-    url: "/images/prodSpinach.jpg",
-    alt: "Fresh spinach leaves",
-    credit: "Fresh Spinach leaves — Wikimedia Commons",
-  },
-  prodMint: {
-    url: "/images/prodMint.jpg",
-    alt: "Fresh mint leaves",
-    credit: "Fresh Mint from San Francisco Farmers Market — Wikimedia Commons",
-  },
-  prodParsleyCurly: {
-    url: "/images/prodParsleyCurly.jpg",
-    alt: "Bunches of fresh curly parsley, Wellington, New Zealand",
-    credit: "Parsley bunches, Wellington, New Zealand — Wikimedia Commons",
-  },
-  prodItalianParsley: {
-    url: "/images/prodItalianParsley.jpg",
-    alt: "Fresh flat-leaf Italian parsley",
-    credit: "Petroselinum crispum Neapolitanum — Wikimedia Commons",
-  },
-  prodSpringOnion: {
-    url: "/images/prodSpringOnion.jpg",
-    alt: "Bunches of fresh spring onions",
-    credit: "Bunches of spring onions — Wikimedia Commons",
-  },
-  prodGarlic: {
-    url: "/images/prodGarlic.jpg",
-    alt: "Fresh garlic bulbs",
-    credit: "Fresh Garlic — Wikimedia Commons",
-  },
-  prodDaikon: {
-    url: "/images/prodDaikon.jpg",
-    alt: "A fresh daikon radish",
-    credit: "Daikon — Wikimedia Commons",
+  prodWhiteOnion: {
+    url: "/images/prodWhiteOnion.jpg",
+    alt: "A whole white onion",
+    credit: "Client-supplied photography",
   },
   prodWhiteJumboOnion: {
     url: "/images/prodWhiteJumboOnion.jpg",
-    alt: "A pile of fresh white onions",
-    credit: "White onions — Wikimedia Commons",
+    alt: "A whole white jumbo onion",
+    credit: "Client-supplied photography",
+  },
+  prodTomato: {
+    url: "/images/prodTomato.jpg",
+    alt: "A ripe red tomato",
+    credit: "Client-supplied photography",
+  },
+  prodCherryTomato: {
+    url: "/images/prodCherryTomato.jpg",
+    alt: "A truss of ripe cherry tomatoes on the vine",
+    credit: "Client-supplied photography",
+  },
+  prodGinger: {
+    url: "/images/prodGinger.jpg",
+    alt: "A hand of fresh ginger root",
+    credit: "Client-supplied photography",
+  },
+  prodGarlic: {
+    url: "/images/prodGarlic.jpg",
+    alt: "A garlic bulb with two loose cloves",
+    credit: "Client-supplied photography",
+  },
+  prodCarrot: {
+    url: "/images/prodCarrot.jpg",
+    alt: "A single fresh carrot",
+    credit: "Client-supplied photography",
+  },
+  prodDaikon: {
+    url: "/images/prodDaikon.jpg",
+    alt: "A whole daikon radish with stems",
+    credit: "Client-supplied photography",
+  },
+  prodCauliflower: {
+    url: "/images/prodCauliflower.jpg",
+    alt: "A whole cauliflower with outer leaves",
+    credit: "Client-supplied photography",
   },
   prodCabbage: {
     url: "/images/prodCabbage.jpg",
-    alt: "Fresh whole cabbages",
-    credit: "Fresh cabbages — Wikimedia Commons",
+    alt: "A whole green cabbage",
+    credit: "Client-supplied photography",
+  },
+  prodBroccoli: {
+    url: "/images/prodBroccoli.jpg",
+    alt: "A head of fresh broccoli",
+    credit: "Client-supplied photography",
+  },
+  prodSilverbeet: {
+    url: "/images/prodSilverbeet.jpg",
+    alt: "Fresh silverbeet leaves with white stems",
+    credit: "Client-supplied photography",
+  },
+  prodCurlyKale: {
+    url: "/images/prodCurlyKale.jpg",
+    alt: "A bunch of fresh curly kale",
+    credit: "Client-supplied photography",
+  },
+  prodBlackKale: {
+    url: "/images/prodBlackKale.jpg",
+    alt: "A bunch of black kale (cavolo nero)",
+    credit: "Client-supplied photography",
+  },
+  prodSpinach: {
+    url: "/images/prodSpinach.jpg",
+    alt: "A bunch of fresh spinach",
+    credit: "Client-supplied photography",
+  },
+  prodCoriander: {
+    url: "/images/prodCoriander.jpg",
+    alt: "A bunch of fresh coriander",
+    credit: "Client-supplied photography",
+  },
+  prodMint: {
+    url: "/images/prodMint.jpg",
+    alt: "A bunch of fresh mint",
+    credit: "Client-supplied photography",
+  },
+  prodParsleyCurly: {
+    url: "/images/prodParsleyCurly.jpg",
+    alt: "A bunch of fresh curly parsley",
+    credit: "Client-supplied photography",
+  },
+  prodItalianParsley: {
+    url: "/images/prodItalianParsley.jpg",
+    alt: "A bunch of fresh flat-leaf Italian parsley",
+    credit: "Client-supplied photography",
+  },
+  prodSpringOnion: {
+    url: "/images/prodSpringOnion.jpg",
+    alt: "A bunch of fresh spring onions",
+    credit: "Client-supplied photography",
+  },
+  prodCucumber: {
+    url: "/images/prodCucumber.jpg",
+    alt: "A whole fresh cucumber",
+    credit: "Client-supplied photography",
+  },
+  prodCapsicum: {
+    url: "/images/prodCapsicum.jpg",
+    alt: "A whole green capsicum",
+    credit: "Client-supplied photography",
   },
 };
 

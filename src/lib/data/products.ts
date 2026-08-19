@@ -19,7 +19,7 @@ export const products: Product[] = [
     packSizes: ["10kg"],
     description:
       "A versatile, good all-round potato suited to boiling, roasting and general kitchen use.",
-    imageKey: "catPotatoes",
+    imageKey: "prodMoonlightPotato",
   },
   {
     slug: "moonlight-large-potato",
@@ -28,7 +28,7 @@ export const products: Product[] = [
     packSizes: ["20kg"],
     description:
       "Larger-format Moonlight potatoes, well suited to high-volume kitchen prep.",
-    imageKey: "catPotatoes",
+    imageKey: "prodMoonlightLargePotato",
   },
 
   // ---- Onions ----
@@ -48,7 +48,7 @@ export const products: Product[] = [
     category: "onions",
     packSizes: ["5kg", "10kg"],
     description: "A firm, all-purpose cooking onion with a clean, sharp flavour.",
-    imageKey: "catOnions",
+    imageKey: "prodWhiteOnion",
   },
   {
     slug: "white-jumbo-onion",
@@ -75,7 +75,7 @@ export const products: Product[] = [
     category: "tomatoes",
     packSizes: [],
     description: "Small, sweet tomatoes for salads, garnish and cooking.",
-    imageKey: "catTomatoes",
+    imageKey: "prodCherryTomato",
   },
 
   // ---- Roots ----
@@ -232,7 +232,7 @@ export const products: Product[] = [
     category: "other-vegetables",
     packSizes: [],
     description: "Fresh capsicum (bell peppers) for cooking and salads.",
-    imageKey: "catOther",
+    imageKey: "prodCapsicum",
   },
 ];
 
