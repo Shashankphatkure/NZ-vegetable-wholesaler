@@ -73,13 +73,13 @@ export const images: Record<string, ImageAsset> = {
   },
   catHerbs: {
     url: "/images/catHerbs.jpg",
-    alt: "A bunch of freshly picked herbs",
-    credit: "Freshly picked herbs — Wikimedia Commons",
+    alt: "Fresh coriander, parsley, mint and spring onion",
+    credit: "Client-supplied photography",
   },
   catOther: {
     url: "/images/catOther.jpg",
-    alt: "Fresh capsicum in sacks",
-    credit: "Fresh capsicum in sacks — Wikimedia Commons",
+    alt: "Fresh cucumbers and red, green and yellow capsicum",
+    credit: "Client-supplied photography",
   },
   prodAgriaPotato: {
     url: "/images/prodAgriaPotato.jpg",
