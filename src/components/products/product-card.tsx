@@ -15,7 +15,10 @@ export function ProductCard({
       href={`/shop/${product.slug}`}
       className="group flex flex-col overflow-hidden rounded-xl border border-soil/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_44px_-18px_rgba(23,60,44,0.32)]"
     >
-      <div className="relative aspect-[4/3] overflow-hidden">
+      {/* Square frame matches the square product photography exactly, so
+          nothing gets cropped -- tall subjects (spring onion, kale) kept
+          losing their tops in a 4:3 frame. */}
+      <div className="relative aspect-square overflow-hidden">
         <ProduceImage
           imageKey={product.imageKey}
           priority={priority}
