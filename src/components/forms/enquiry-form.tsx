@@ -91,7 +91,7 @@ export function EnquiryForm({
 
   return (
     <form onSubmit={handleSubmit} className={className}>
-      <div className="grid gap-5 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <Field label="Name" name="name" required autoComplete="name" />
         <Field label="Business Name" name="business" autoComplete="organization" />
         <Field label="Phone" name="phone" type="tel" autoComplete="tel" />

@@ -15,11 +15,11 @@ export function ContactInfo() {
         <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-forest/8 text-forest">
           <Phone className="h-5 w-5" />
         </span>
-        <div>
+        <div className="min-w-0">
           <p className="font-label text-[11px] tracking-[0.14em] text-soil/45 uppercase">
             Phone
           </p>
-          <p className="font-display text-[16px] font-bold text-soil group-hover:text-forest">
+          <p className="font-display break-words text-[16px] font-bold text-soil group-hover:text-forest">
             {siteConfig.phone}
           </p>
         </div>
@@ -46,11 +46,11 @@ export function ContactInfo() {
         <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-forest/8 text-forest">
           <MapPin className="h-5 w-5" />
         </span>
-        <div>
+        <div className="min-w-0">
           <p className="font-label text-[11px] tracking-[0.14em] text-soil/45 uppercase">
             Address
           </p>
-          <p className="font-display text-[16px] font-bold text-soil">
+          <p className="font-display break-words text-[16px] font-bold text-soil">
             {siteConfig.address.line1}
             <br />
             {siteConfig.address.line2}

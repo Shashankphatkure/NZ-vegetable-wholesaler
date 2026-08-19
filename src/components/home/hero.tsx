@@ -7,7 +7,7 @@ import { ProduceImage } from "@/components/ui/produce-image";
 export function Hero() {
   return (
     <section className="hero-wash relative overflow-hidden">
-      <Container className="relative grid gap-12 py-16 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:py-24">
+      <Container className="relative grid grid-cols-1 gap-12 py-16 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:py-24">
         <div className="relative z-10">
           <Eyebrow>Fresh Produce · New Zealand</Eyebrow>
           <h1 className="mt-6 text-[42px] leading-[1.05] font-extrabold text-soil sm:text-[56px] lg:text-[64px]">

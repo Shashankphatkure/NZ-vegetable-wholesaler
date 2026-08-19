@@ -36,7 +36,7 @@ export function ServiceDetail() {
           supporting="Four ways we support restaurants, cafes and food businesses across New Zealand."
         />
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2">
+        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2">
           {services.map((service, i) => (
             <FadeUp
               key={service.title}

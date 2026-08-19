@@ -7,7 +7,7 @@ import { FadeUp } from "@/components/ui/fade-up";
 export function StorySection() {
   return (
     <section className="py-20 lg:py-28">
-      <Container className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
+      <Container className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
         <FadeUp className="relative aspect-[4/5] overflow-hidden rounded-2xl lg:order-2">
           <ProduceImage
             imageKey="storySection"

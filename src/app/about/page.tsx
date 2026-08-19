@@ -66,7 +66,7 @@ export default function AboutPage() {
       />
 
       <section className="py-20 lg:py-28">
-        <Container className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+        <Container className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
           <FadeUp>
             <SectionHeading eyebrow="Founder Story" title={siteConfig.founder} />
             <div className="mt-7 flex flex-col gap-5 text-[16px] leading-relaxed text-soil/75">
@@ -111,7 +111,7 @@ export default function AboutPage() {
           <FadeUp>
             <SectionHeading eyebrow="What We Stand For" title="Our Values" tone="cream" align="center" className="mx-auto" />
           </FadeUp>
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {values.map((value, i) => (
               <FadeUp
                 key={value.title}

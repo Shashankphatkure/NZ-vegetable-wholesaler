@@ -19,7 +19,7 @@ export default function ContactPage() {
         supporting="Tell us what your kitchen needs — we'll get back to you directly."
       />
 
-      <Container className="grid gap-12 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16 lg:py-20">
+      <Container className="grid grid-cols-1 gap-12 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16 lg:py-20">
         <ContactInfo />
 
         <div className="rounded-2xl border border-soil/10 bg-white p-6 sm:p-9">

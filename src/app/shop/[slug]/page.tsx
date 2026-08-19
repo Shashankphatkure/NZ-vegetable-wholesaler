@@ -48,7 +48,7 @@ export default async function ProductPage({
         Back to all produce
       </Link>
 
-      <div className="mt-8 grid gap-12 lg:grid-cols-2 lg:gap-16">
+      <div className="mt-8 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="lg:sticky lg:top-28">
           <div className="relative aspect-square overflow-hidden rounded-2xl">
             <ProduceImage imageKey={product.imageKey} priority sizes="(min-width: 1024px) min(45vw, 570px), 100vw" />

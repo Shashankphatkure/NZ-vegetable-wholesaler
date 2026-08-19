@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <footer className="bg-forest text-cream">
       <Container className="py-16 lg:py-20">
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div className="max-w-sm">
             <Logo tone="cream" />
             <p className="mt-5 text-[15px] leading-relaxed text-cream/70">
@@ -41,27 +41,27 @@ export function Footer() {
               Contact
             </h3>
             <ul className="mt-5 flex flex-col gap-3 text-[15px] text-cream/85">
-              <li>
+              <li className="min-w-0">
                 <a
                   href={siteConfig.phoneHref}
-                  className="inline-flex items-center gap-2.5 transition-colors hover:text-kiwi"
+                  className="inline-flex min-w-0 max-w-full items-center gap-2.5 transition-colors hover:text-kiwi"
                 >
                   <Phone className="h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
-                  {siteConfig.phone}
+                  <span className="min-w-0 break-words">{siteConfig.phone}</span>
                 </a>
               </li>
-              <li>
+              <li className="min-w-0">
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="inline-flex items-center gap-2.5 transition-colors hover:text-kiwi"
+                  className="inline-flex min-w-0 max-w-full items-center gap-2.5 transition-colors hover:text-kiwi"
                 >
                   <Mail className="h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
-                  {siteConfig.email}
+                  <span className="min-w-0 truncate">{siteConfig.email}</span>
                 </a>
               </li>
-              <li className="inline-flex items-start gap-2.5">
+              <li className="inline-flex min-w-0 items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
-                <span>Pukekohe, New Zealand</span>
+                <span className="min-w-0">Pukekohe, New Zealand</span>
               </li>
             </ul>
           </div>
