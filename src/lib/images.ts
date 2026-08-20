@@ -38,8 +38,8 @@ export const images: Record<string, ImageAsset> = {
   },
   nzLandscape: {
     url: "/images/nzLandscape.jpg",
-    alt: "Green rolling hills in Lindis Pass, New Zealand",
-    credit: "Hills in Lindis Pass, New Zealand — Wikimedia Commons",
+    alt: "Rows of leafy vegetable crops growing in a New Zealand field at sunrise, with a delivery truck on the road behind",
+    credit: "Client-supplied photography",
   },
   contactBanner: {
     url: "/images/contactBanner.jpg",
