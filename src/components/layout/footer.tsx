@@ -72,8 +72,12 @@ export function Footer() {
             © {year} {siteConfig.name}. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <span className="cursor-default">Privacy Policy</span>
-            <span className="cursor-default">Terms</span>
+            <Link href="/privacy" className="transition-colors hover:text-kiwi">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="transition-colors hover:text-kiwi">
+              Terms
+            </Link>
           </div>
         </div>
       </Container>
