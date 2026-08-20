@@ -4,12 +4,8 @@ export interface ImageAsset {
   credit?: string;
 }
 
-// Free-to-use stock photography (Wikimedia Commons, CC-licensed / public
-// domain), downloaded and self-hosted from /public/images so the site has
-// no runtime dependency on an external image host. Standing in for the
-// client's real photography — swap the url here once real photos (crates,
-// packhouse, delivery fleet, Pukekohe land, founder) are supplied, it
-// updates everywhere the key is used.
+// Client-supplied photography, self-hosted from /public/images so the
+// site has no runtime dependency on an external image host.
 export const images: Record<string, ImageAsset> = {
   heroHome: {
     url: "/images/heroHome.jpg",

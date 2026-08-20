@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "VegieFresh",
   shortName: "VegieFresh",
-  url: "https://example.com",
+  url: "https://nz-vegetable-wholesaler.vercel.app",
   description:
     "Quality vegetables supplied to restaurants, cafes and food businesses across New Zealand. Based in Pukekohe.",
   founder: "Satwant Singh",
