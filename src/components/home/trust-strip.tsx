@@ -27,7 +27,7 @@ function Track() {
 export function TrustStrip() {
   return (
     <div className="overflow-hidden border-y border-soil/10 bg-cream-2 py-5">
-      <div className="animate-marquee hover:[animation-play-state:paused] flex w-max motion-reduce:animate-none">
+      <div className="animate-marquee hover:[animation-play-state:paused] flex w-max">
         <Track />
         <div aria-hidden="true">
           <Track />

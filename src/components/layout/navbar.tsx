@@ -18,7 +18,8 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
+    const onScroll = () =>
+      setScrolled((document.scrollingElement?.scrollTop ?? window.scrollY) > 8);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -33,7 +34,13 @@ export function Navbar() {
     // the page instead of where they were. Freezing the body in place at
     // its current offset — and restoring the real scroll position on
     // close — is the standard fix for that.
-    const scrollY = window.scrollY;
+    //
+    // Reading/writing via `document.scrollingElement` rather than
+    // `window.scrollY`/`window.scrollTo` — it's the browser's own,
+    // spec-correct way of finding whichever element actually owns page
+    // scroll (html vs body), rather than assuming it's always the window.
+    const scrollingEl = document.scrollingElement;
+    const scrollY = scrollingEl?.scrollTop ?? window.scrollY;
     const { body } = document;
     const prev = {
       position: body.style.position,
@@ -51,7 +58,11 @@ export function Navbar() {
       body.style.top = prev.top;
       body.style.left = prev.left;
       body.style.right = prev.right;
-      window.scrollTo(0, scrollY);
+      if (scrollingEl) {
+        scrollingEl.scrollTop = scrollY;
+      } else {
+        window.scrollTo(0, scrollY);
+      }
     };
   }, [open]);
 

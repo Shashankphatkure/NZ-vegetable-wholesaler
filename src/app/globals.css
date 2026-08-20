@@ -150,7 +150,7 @@ h4 {
   html {
     scroll-behavior: auto;
   }
-  *,
+  *:not(.animate-marquee),
   *::before,
   *::after {
     animation-duration: 0.001ms !important;
