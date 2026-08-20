@@ -43,7 +43,7 @@ export const images: Record<string, ImageAsset> = {
   },
   contactBanner: {
     url: "/images/contactBanner.jpg",
-    alt: "A grower smiling while arranging crates of fresh produce at the farm",
+    alt: "A grower smiling while packing fresh greens into a crate in the packhouse",
     credit: "Client-supplied photography",
   },
   catPotatoes: {
