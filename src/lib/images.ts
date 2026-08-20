@@ -18,8 +18,8 @@ export const images: Record<string, ImageAsset> = {
   },
   heroAbout: {
     url: "/images/storySection.jpg",
-    alt: "Close-up of hands sorting fresh produce",
-    credit: "Sorting fresh greens by hand — Wikimedia Commons",
+    alt: "Sorting fresh onions, potatoes and greens by hand in crates",
+    credit: "Client-supplied photography",
   },
   heroServices: {
     url: "/images/heroServices.jpg",
@@ -33,8 +33,8 @@ export const images: Record<string, ImageAsset> = {
   },
   storySection: {
     url: "/images/storySection.jpg",
-    alt: "Close-up of hands sorting fresh greens",
-    credit: "Sorting fresh greens by hand — Wikimedia Commons",
+    alt: "Sorting fresh onions, potatoes and greens by hand in crates",
+    credit: "Client-supplied photography",
   },
   nzLandscape: {
     url: "/images/nzLandscape.jpg",
