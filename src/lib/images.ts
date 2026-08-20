@@ -13,8 +13,8 @@ export interface ImageAsset {
 export const images: Record<string, ImageAsset> = {
   heroHome: {
     url: "/images/heroHome.jpg",
-    alt: "Crates of fresh mixed vegetables stacked on a farm",
-    credit: "Vegetable crates at Northwold Farm — Wikimedia Commons",
+    alt: "A grower harvesting fresh lettuce by hand in the field",
+    credit: "Client-supplied photography",
   },
   heroAbout: {
     url: "/images/storySection.jpg",
