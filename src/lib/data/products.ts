@@ -8,7 +8,7 @@ export const products: Product[] = [
     category: "potatoes",
     packSizes: ["5kg", "10kg", "20kg"],
     description:
-      "An all-purpose potato with a dry, floury texture — reliable for roasting, mashing, chips and fries.",
+      "Agria is New Zealand's most widely grown all-purpose potato, valued for its dry, floury texture and pale yellow flesh. It roasts to a crisp, golden exterior with a fluffy centre, mashes smoothly without turning gluey, and holds its shape well when cut for chips and fries. A dependable, versatile choice for kitchens that need one potato to cover most of the menu.",
     imageKey: "prodAgriaPotato",
     featured: true,
   },
@@ -18,7 +18,7 @@ export const products: Product[] = [
     category: "potatoes",
     packSizes: ["10kg"],
     description:
-      "A versatile, good all-round potato suited to boiling, roasting and general kitchen use.",
+      "Moonlight is a smooth-skinned, oval potato with pale yellow flesh and a firmer, waxier texture than Agria. It holds together well through boiling and steaming, making it a reliable choice for salads, casseroles and general prep where potatoes need to keep their shape. Supplied in smaller 10kg packs, it suits kitchens wanting a lighter, more manageable case size.",
     imageKey: "prodMoonlightPotato",
   },
   {
@@ -27,7 +27,7 @@ export const products: Product[] = [
     category: "potatoes",
     packSizes: ["20kg"],
     description:
-      "Larger-format Moonlight potatoes, well suited to high-volume kitchen prep.",
+      "The same smooth-skinned, waxy-fleshed Moonlight variety, sized up and packed in bulk 20kg cases for high-volume kitchens. The larger tubers hold their shape well through boiling, steaming and roasting, making prep faster when peeling and portioning at scale — a practical option for commercial kitchens working through consistent daily volumes.",
     imageKey: "prodMoonlightLargePotato",
   },
 
@@ -38,7 +38,7 @@ export const products: Product[] = [
     category: "onions",
     packSizes: ["5kg", "10kg"],
     description:
-      "A milder, sweeter onion with red-purple skin — good raw or cooked.",
+      "Red onions bring a milder, slightly sweet flavour and vivid red-purple skin that adds colour as well as taste to a dish. Eaten raw, they're crisp and mellow enough for salads, salsas and garnishes; cooked, they soften into a natural sweetness suited to caramelising, grilling and pickling. A kitchen staple for menus that call for onion with visual appeal.",
     imageKey: "prodRedOnion",
     featured: true,
   },
@@ -47,7 +47,8 @@ export const products: Product[] = [
     name: "White Onion",
     category: "onions",
     packSizes: ["5kg", "10kg"],
-    description: "A firm, all-purpose cooking onion with a clean, sharp flavour.",
+    description:
+      "White onions are a firm, all-purpose cooking onion with a clean, sharp bite that mellows and sweetens as it cooks. Their tight, papery skin and dense flesh make them reliable for dicing, sautéing and building flavour bases for sauces, soups and stocks — a dependable everyday onion for high-volume kitchen use.",
     imageKey: "prodWhiteOnion",
   },
   {
@@ -55,7 +56,8 @@ export const products: Product[] = [
     name: "White Jumbo Onion",
     category: "onions",
     packSizes: ["20kg"],
-    description: "Large-format white onions, packed for high-volume kitchens.",
+    description:
+      "The same reliable, sharp-flavoured white cooking onion, grown to a larger size and packed in bulk 20kg cases. The bigger bulbs mean fewer onions to peel and dice per kilo, saving prep time in busy commercial kitchens — ideal for high-volume operations working through consistent daily stock.",
     imageKey: "prodWhiteJumboOnion",
   },
 
@@ -65,7 +67,8 @@ export const products: Product[] = [
     name: "Tomato",
     category: "tomatoes",
     packSizes: [],
-    description: "Standard round tomatoes for everyday kitchen use.",
+    description:
+      "Standard round tomatoes with firm flesh and a balanced, everyday tomato flavour, suited to slicing, dicing, cooking down into sauces or serving fresh in salads and sandwiches. Supplied fresh for consistent quality across the week, they're a reliable base ingredient for menus that go through tomatoes daily.",
     imageKey: "prodTomato",
     featured: true,
   },
@@ -74,7 +77,8 @@ export const products: Product[] = [
     name: "Cherry Tomato",
     category: "tomatoes",
     packSizes: [],
-    description: "Small, sweet tomatoes for salads, garnish and cooking.",
+    description:
+      "Small, sweet cherry tomatoes with a higher sugar content and a bright, punchy flavour compared to standard tomatoes. Their bite-sized form makes them ideal for salads, garnish, skewers and quick roasting, where a burst of sweetness and colour lifts a dish without extra prep.",
     imageKey: "prodCherryTomato",
   },
 
@@ -84,7 +88,8 @@ export const products: Product[] = [
     name: "Ginger",
     category: "roots",
     packSizes: [],
-    description: "Fresh ginger root, a kitchen staple for flavour bases and marinades.",
+    description:
+      "Fresh ginger root with a firm, fibrous texture and the sharp, aromatic heat that's a foundation flavour across countless cuisines. Used grated, sliced or minced, it forms the base of marinades, stir-fry pastes, soups and dressings, and keeps well when stored correctly — a kitchen staple worth having on hand at all times.",
     imageKey: "prodGinger",
     featured: true,
   },
@@ -93,7 +98,8 @@ export const products: Product[] = [
     name: "Garlic",
     category: "roots",
     packSizes: [],
-    description: "Fresh garlic bulbs for everyday kitchen use.",
+    description:
+      "Fresh garlic bulbs with firm, tightly-packed cloves and the pungent, savoury flavour that underpins most kitchen prep. Used raw, roasted or sautéed, garlic is one of the most reliably used ingredients across any menu — supplied fresh and firm for consistent flavour and shelf life.",
     imageKey: "prodGarlic",
   },
   {
@@ -101,7 +107,8 @@ export const products: Product[] = [
     name: "Carrot",
     category: "roots",
     packSizes: [],
-    description: "Firm, everyday carrots for cooking, roasting and prep.",
+    description:
+      "Firm, everyday carrots with a naturally sweet flavour that holds up well through cooking, roasting or raw prep. Reliable for stocks, mirepoix, salads and side dishes, carrots are one of the most consistently used vegetables in any commercial kitchen — supplied fresh and firm for easy peeling and prep.",
     imageKey: "prodCarrot",
     featured: true,
   },
@@ -110,7 +117,8 @@ export const products: Product[] = [
     name: "Daikon",
     category: "roots",
     packSizes: [],
-    description: "A large white radish, commonly used in Asian cooking.",
+    description:
+      "Daikon is a large, mild white radish with crisp flesh and a subtly peppery bite that mellows when cooked. Common in Asian cuisine, it's used grated, pickled, simmered in broths or shredded raw into salads — a versatile ingredient for kitchens working across a range of cuisines.",
     imageKey: "prodDaikon",
   },
 
@@ -120,7 +128,8 @@ export const products: Product[] = [
     name: "Cauliflower",
     category: "greens",
     packSizes: [],
-    description: "Whole-head cauliflower for roasting, steaming or purées.",
+    description:
+      "Whole-head cauliflower with tight, creamy-white florets, versatile enough for roasting whole, steaming, puréeing or breaking down into rice-style prep. Its mild flavour takes on spices and marinades well, making it a flexible base for both traditional sides and modern menu items.",
     imageKey: "prodCauliflower",
   },
   {
@@ -128,7 +137,8 @@ export const products: Product[] = [
     name: "Cabbage",
     category: "greens",
     packSizes: [],
-    description: "Firm, everyday cabbage for slaws, stir-fries and cooking.",
+    description:
+      "Firm, tightly-packed cabbage with crisp leaves that hold their crunch raw or soften well when cooked. A reliable everyday vegetable for slaws, stir-fries, braises and pickling, cabbage keeps well in storage and offers good value across high-volume kitchen use.",
     imageKey: "prodCabbage",
   },
   {
@@ -136,7 +146,8 @@ export const products: Product[] = [
     name: "Broccoli",
     category: "greens",
     packSizes: [],
-    description: "Fresh broccoli heads for steaming, roasting and stir-fries.",
+    description:
+      "Fresh broccoli heads with tight, deep-green florets and firm stalks, suited to steaming, roasting, blanching or stir-frying. A dependable everyday green that holds its colour and texture well through cooking, broccoli is a menu staple across both à la carte and high-volume kitchens.",
     imageKey: "prodBroccoli",
     featured: true,
   },
@@ -145,7 +156,8 @@ export const products: Product[] = [
     name: "Silverbeet",
     category: "greens",
     packSizes: [],
-    description: "Leafy silverbeet (chard), a hardy everyday green.",
+    description:
+      "Silverbeet (chard) is a hardy, leafy green with broad dark leaves and firm white stems, both of which are edible. It wilts down well for sautéing and braising, and its slightly earthy, mineral flavour holds up alongside richer dishes — a robust everyday green for kitchen use.",
     imageKey: "prodSilverbeet",
   },
   {
@@ -153,7 +165,8 @@ export const products: Product[] = [
     name: "Curly Kale",
     category: "greens",
     packSizes: [],
-    description: "Curly-leaf kale for cooking, salads and garnish.",
+    description:
+      "Curly kale has tightly ruffled, deep-green leaves with a firm texture and a mild, slightly bitter flavour that softens with cooking. It holds up well raw in salads when massaged, and cooks down reliably for sautés, soups and sides — a hardy, versatile green for year-round kitchen use.",
     imageKey: "prodCurlyKale",
   },
   {
@@ -161,7 +174,8 @@ export const products: Product[] = [
     name: "Black Kale",
     category: "greens",
     packSizes: [],
-    description: "Also known as cavolo nero — a dark, tender-leaved kale.",
+    description:
+      "Also known as cavolo nero, black kale has long, dark, blistered leaves and a more tender texture than curly kale, with a deeper, slightly sweeter flavour. It cooks down quickly for sautés and braises, and holds its structure well in soups — a distinctive green favoured on modern menus.",
     imageKey: "prodBlackKale",
   },
   {
@@ -169,7 +183,8 @@ export const products: Product[] = [
     name: "Spinach",
     category: "greens",
     packSizes: [],
-    description: "Fresh spinach leaves for cooking and salads.",
+    description:
+      "Fresh spinach leaves with a tender texture and mild, slightly earthy flavour, equally suited to raw salads or quick cooking. It wilts down fast for sautés and sides, and blends smoothly into sauces, dips and purées — a versatile everyday green for any kitchen.",
     imageKey: "prodSpinach",
   },
 
@@ -179,7 +194,8 @@ export const products: Product[] = [
     name: "Fresh Coriander",
     category: "herbs",
     packSizes: [],
-    description: "Bunched fresh coriander (cilantro) for garnish and flavour.",
+    description:
+      "Bunched fresh coriander (cilantro) with a bright, citrusy aroma that's a core flavour across many world cuisines. Used as a garnish, blended into pastes and dressings, or stirred through dishes at the end of cooking, it's a staple herb for kitchens working with Asian, Mexican and Middle Eastern flavours.",
     imageKey: "prodCoriander",
     featured: true,
   },
@@ -188,7 +204,8 @@ export const products: Product[] = [
     name: "Mint",
     category: "herbs",
     packSizes: [],
-    description: "Fresh mint, bunched for kitchen and beverage use.",
+    description:
+      "Fresh mint, bunched for kitchen and beverage use, with a cool, sweet aroma that lifts both savoury and sweet dishes. Common in salads, sauces, marinades and drinks, mint is a versatile herb that adds brightness wherever it's used.",
     imageKey: "prodMint",
   },
   {
@@ -196,7 +213,8 @@ export const products: Product[] = [
     name: "Parsley Curly",
     category: "herbs",
     packSizes: [],
-    description: "Curly-leaf parsley, bunched fresh.",
+    description:
+      "Curly-leaf parsley, bunched fresh, with a mild, clean, slightly peppery flavour and a texture that holds up well as a garnish. A kitchen staple for finishing dishes, flavouring stocks and sauces, and adding a pop of green to any plate.",
     imageKey: "prodParsleyCurly",
   },
   {
@@ -204,7 +222,8 @@ export const products: Product[] = [
     name: "Italian Parsley",
     category: "herbs",
     packSizes: [],
-    description: "Flat-leaf parsley with a stronger flavour, bunched fresh.",
+    description:
+      "Flat-leaf Italian parsley, bunched fresh, with a stronger, more herbaceous flavour than curly parsley and tender leaves that chop easily. Favoured for salsas, dressings, garnish and finishing dishes where a more pronounced parsley flavour is wanted.",
     imageKey: "prodItalianParsley",
   },
   {
@@ -212,7 +231,8 @@ export const products: Product[] = [
     name: "Spring Onion",
     category: "herbs",
     packSizes: [],
-    description: "Bunched spring onions (scallions) for garnish and cooking.",
+    description:
+      "Bunched spring onions (scallions) with crisp white stalks and tender green tops, both of which are used across raw and cooked dishes. Sliced fresh as a garnish or cooked into stir-fries, soups and sauces, spring onions add a mild onion flavour with a fresh, crisp bite.",
     imageKey: "prodSpringOnion",
   },
 
@@ -222,7 +242,8 @@ export const products: Product[] = [
     name: "Cucumber",
     category: "other-vegetables",
     packSizes: [],
-    description: "Standard fresh cucumbers for everyday kitchen use.",
+    description:
+      "Standard fresh cucumbers with crisp, watery flesh and a clean, refreshing flavour, suited to salads, sandwiches, garnish and pickling. A reliable everyday vegetable that holds its crunch well when stored correctly, making it a dependable addition to any kitchen's fresh produce order.",
     imageKey: "prodCucumber",
     featured: true,
   },
@@ -231,7 +252,8 @@ export const products: Product[] = [
     name: "Capsicum",
     category: "other-vegetables",
     packSizes: [],
-    description: "Fresh capsicum (bell peppers) for cooking and salads.",
+    description:
+      "Fresh capsicum (bell peppers) with crisp, thick-walled flesh and a sweet, slightly grassy flavour that intensifies when roasted or grilled. Used raw in salads, sliced for garnish, or cooked into stir-fries and sauces, capsicum adds colour, crunch and flavour across a wide range of dishes.",
     imageKey: "prodCapsicum",
   },
 ];
