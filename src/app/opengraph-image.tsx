@@ -1,3 +1,5 @@
+import { readFileSync } from "fs";
+import { join } from "path";
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/site-config";
 
@@ -5,6 +7,10 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default function OpengraphImage() {
+  const iconB64 = readFileSync(join(process.cwd(), "public/images/logo-icon.png")).toString(
+    "base64",
+  );
+
   return new ImageResponse(
     (
       <div
@@ -25,14 +31,27 @@ export default function OpengraphImage() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: 16,
-            fontSize: 22,
-            letterSpacing: 4,
-            textTransform: "uppercase",
-            color: "#8dbf52",
+            gap: 14,
           }}
         >
-          Fresh Produce · New Zealand
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`data:image/png;base64,${iconB64}`}
+            width={40}
+            height={40}
+            alt=""
+          />
+          <div
+            style={{
+              display: "flex",
+              fontSize: 22,
+              letterSpacing: 4,
+              textTransform: "uppercase",
+              color: "#8dbf52",
+            }}
+          >
+            Fresh Produce · New Zealand
+          </div>
         </div>
         <div
           style={{

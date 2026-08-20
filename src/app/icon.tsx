@@ -1,9 +1,15 @@
+import { readFileSync } from "fs";
+import { join } from "path";
 import { ImageResponse } from "next/og";
 
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
 export default function Icon() {
+  const iconB64 = readFileSync(join(process.cwd(), "public/images/logo-icon.png")).toString(
+    "base64",
+  );
+
   return new ImageResponse(
     (
       <div
@@ -17,16 +23,13 @@ export default function Icon() {
           borderRadius: 7,
         }}
       >
-        <svg width="24" height="24" viewBox="0 0 38 38" fill="none">
-          <circle cx="19" cy="19" r="17.25" stroke="#f6f4ea" strokeWidth="2" />
-          <path
-            d="M12.5 19.5L16.8 24L26 14"
-            stroke="#f6f4ea"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`data:image/png;base64,${iconB64}`}
+          width={26}
+          height={26}
+          alt=""
+        />
       </div>
     ),
     { ...size },

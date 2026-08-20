@@ -1,9 +1,6 @@
 export const siteConfig = {
-  // No official trading name / logo has been supplied by the client yet.
-  // This placeholder is the single source of truth — swap it here once
-  // the business name is confirmed and it updates everywhere on the site.
-  name: "[Business Name]",
-  shortName: "[Business]",
+  name: "VegieFresh",
+  shortName: "VegieFresh",
   url: "https://example.com",
   description:
     "Quality vegetables supplied to restaurants, cafes and food businesses across New Zealand. Based in Pukekohe.",
