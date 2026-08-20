@@ -44,11 +44,12 @@ export function EnquiryForm({
       message,
     ].filter((line): line is string => Boolean(line) || line === "");
 
-    const mailto = `mailto:${siteConfig.email}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+    const body = bodyLines.join("\n");
+    const gmailCompose = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+      siteConfig.email,
+    )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    window.location.href = mailto;
+    window.open(gmailCompose, "_blank", "noopener,noreferrer");
     setSent(true);
   }
 
@@ -59,11 +60,11 @@ export function EnquiryForm({
           <CheckCircle2 className="h-8 w-8 text-leaf" />
           <div>
             <h3 className="font-display text-lg font-bold text-soil">
-              Your email app should be open now
+              A Gmail tab should be open now
             </h3>
             <p className="mt-2 text-[15px] leading-relaxed text-soil/70">
-              Send the message to finish your enquiry. If nothing opened,
-              email us directly at{" "}
+              Hit send there to finish your enquiry. If nothing opened
+              (pop-up blocked?), email us directly at{" "}
               <a
                 href={`mailto:${siteConfig.email}`}
                 className="font-semibold text-forest underline underline-offset-2"
