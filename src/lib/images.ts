@@ -23,13 +23,13 @@ export const images: Record<string, ImageAsset> = {
   },
   heroServices: {
     url: "/images/heroServices.jpg",
-    alt: "Pallets stored in a modern warehouse racking system",
-    credit: "Modern warehouse with pallet rack storage system — Wikimedia Commons",
+    alt: "Warehouse staff in hi-vis packing crates of fresh produce for delivery",
+    credit: "Client-supplied photography",
   },
   heroShop: {
     url: "/images/heroShop.jpg",
-    alt: "An abundant, colourful display of fresh mixed vegetables",
-    credit: "Colorful Vegetable Display at Wadi Kaam Market — Wikimedia Commons",
+    alt: "Crates of fresh potatoes, onions, carrots, broccoli and other vegetables on the farm",
+    credit: "Client-supplied photography",
   },
   storySection: {
     url: "/images/storySection.jpg",
@@ -43,8 +43,8 @@ export const images: Record<string, ImageAsset> = {
   },
   contactBanner: {
     url: "/images/contactBanner.jpg",
-    alt: "A quiet rural New Zealand landscape",
-    credit: "New Zealand - Rural landscape — Wikimedia Commons",
+    alt: "A grower smiling while arranging crates of fresh produce at the farm",
+    credit: "Client-supplied photography",
   },
   catPotatoes: {
     url: "/images/catPotatoes.jpg",

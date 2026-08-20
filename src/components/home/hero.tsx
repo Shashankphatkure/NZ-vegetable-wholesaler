@@ -36,7 +36,7 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <span className="inline-flex items-center gap-2 rounded-full border border-forest/15 bg-white/70 px-4 py-2 text-[13px] font-medium text-soil/70 backdrop-blur-sm">
               <Sparkles className="h-3.5 w-3.5 text-gold" />
-              10+ years hands-on experience
+              15+ years hands-on experience
             </span>
             <span className="inline-flex items-center gap-2 rounded-full border border-forest/15 bg-white/70 px-4 py-2 text-[13px] font-medium text-soil/70 backdrop-blur-sm">
               <Truck className="h-3.5 w-3.5 text-leaf" />

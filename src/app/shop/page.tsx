@@ -16,6 +16,7 @@ export default function ShopPage() {
         eyebrow="Shop"
         title="Our Produce"
         supporting="Quality fresh vegetables supplied for restaurants, cafes, food businesses and commercial kitchens."
+        imageKey="heroShop"
       />
       <Suspense>
         <ShopGrid />
