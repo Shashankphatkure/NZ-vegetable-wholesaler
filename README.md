@@ -8,7 +8,7 @@ TypeScript and Tailwind CSS v4.
 ## Getting started
 
 ```bash
-npm install
+npm install 
 npm run dev
 ```
 
