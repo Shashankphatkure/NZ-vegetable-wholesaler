@@ -9,10 +9,9 @@ export const siteConfig = {
   phoneHref: "tel:+6402108256766",
   email: "satwantbatth2@gmail.com",
   address: {
-    line1: "28 Sedgebrook Road",
-    line2: "RD 3, Pukekohe 2678",
-    line3: "New Zealand",
-    full: "28 Sedgebrook Road, RD 3, Pukekohe 2678, New Zealand",
+    line1: "Pukekohe Road 2678",
+    line2: "New Zealand",
+    full: "Pukekohe Road 2678, New Zealand",
   },
   regions: ["Auckland", "Hamilton"],
   socials: {

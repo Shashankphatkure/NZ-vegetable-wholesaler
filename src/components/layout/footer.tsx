@@ -61,7 +61,9 @@ export function Footer() {
               </li>
               <li className="inline-flex min-w-0 items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
-                <span className="min-w-0">Pukekohe, New Zealand</span>
+                <span className="min-w-0">
+                  {siteConfig.address.line1}, {siteConfig.address.line2}
+                </span>
               </li>
             </ul>
           </div>

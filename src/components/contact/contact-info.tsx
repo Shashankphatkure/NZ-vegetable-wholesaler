@@ -54,8 +54,6 @@ export function ContactInfo() {
             {siteConfig.address.line1}
             <br />
             {siteConfig.address.line2}
-            <br />
-            {siteConfig.address.line3}
           </p>
         </div>
       </div>
