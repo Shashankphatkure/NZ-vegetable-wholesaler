@@ -231,3 +231,32 @@ export function serviceSchema() {
     },
   };
 }
+
+export function areaServiceSchema(area: {
+  slug: string;
+  name: string;
+  placeType: "City" | "AdministrativeArea";
+  seoDescription: string;
+  suburbs: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": absoluteUrl(`/areas/${area.slug}#service`),
+    name: `Wholesale fresh produce supply and delivery — ${area.name}`,
+    serviceType: "Wholesale vegetable supply and delivery",
+    description: area.seoDescription,
+    provider: { "@id": ORG_ID },
+    url: absoluteUrl(`/areas/${area.slug}`),
+    areaServed: [
+      { "@type": area.placeType, name: area.name },
+      ...area.suburbs
+        .filter((s) => !s.includes("(by arrangement)"))
+        .map((name) => ({ "@type": "Place", name })),
+    ],
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType: "Restaurants, cafes, takeaways and caterers",
+    },
+  };
+}

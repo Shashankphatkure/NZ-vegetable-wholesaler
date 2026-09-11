@@ -1,11 +1,12 @@
 import type { Post } from "@/lib/types";
+import { localPosts } from "@/lib/data/posts-local";
 
 // Blog / resource articles. Each post opens with a `keyTakeaway` — a short,
 // self-contained answer that AI engines and featured snippets can quote —
 // then expands with H2/H3 sections. Dates are ISO; keep `updatedAt` current
 // when content changes so the sitemap and Article schema reflect it.
 
-export const posts: Post[] = [
+const topicalPosts: Post[] = [
   {
     slug: "how-to-choose-a-produce-supplier-for-your-restaurant-auckland",
     title: "How to Choose a Fresh Produce Supplier for Your Restaurant in Auckland",
@@ -506,6 +507,8 @@ export const posts: Post[] = [
     relatedProducts: ["agria-potato", "white-jumbo-onion", "carrot"],
   },
 ];
+
+export const posts: Post[] = [...topicalPosts, ...localPosts];
 
 export function getPost(slug: string) {
   return posts.find((p) => p.slug === slug);

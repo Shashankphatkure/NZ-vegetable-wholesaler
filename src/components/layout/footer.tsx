@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/layout/logo";
 import { siteConfig, navLinks } from "@/lib/site-config";
+import { areas } from "@/lib/data/areas";
 
 export function Footer() {
   const year = 2026;
@@ -10,7 +11,7 @@ export function Footer() {
   return (
     <footer className="bg-forest text-cream">
       <Container className="py-16 lg:py-20">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div className="max-w-sm">
             <Logo tone="cream" />
             <p className="mt-5 text-[15px] leading-relaxed text-cream/70">
@@ -31,6 +32,23 @@ export function Footer() {
                   className="w-fit text-[15px] text-cream/85 transition-colors hover:text-kiwi"
                 >
                   {link.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          <div>
+            <h3 className="font-label text-[12px] tracking-[0.16em] text-cream/50 uppercase">
+              Delivery Areas
+            </h3>
+            <nav className="mt-5 flex flex-col gap-3" aria-label="Delivery areas">
+              {areas.map((area) => (
+                <Link
+                  key={area.slug}
+                  href={`/areas/${area.slug}`}
+                  className="w-fit text-[15px] text-cream/85 transition-colors hover:text-kiwi"
+                >
+                  {area.name}
                 </Link>
               ))}
             </nav>

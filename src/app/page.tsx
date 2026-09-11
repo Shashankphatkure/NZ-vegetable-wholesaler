@@ -10,6 +10,7 @@ import { StorySection } from "@/components/home/story-section";
 import { WhyChooseUs } from "@/components/home/why-choose-us";
 import { ServicesPreview } from "@/components/home/services-preview";
 import { NzSection } from "@/components/home/nz-section";
+import { Testimonials } from "@/components/home/testimonials";
 import { CtaBanner } from "@/components/shared/cta-banner";
 import { CategoryCard } from "@/components/products/category-card";
 import { ProductCard } from "@/components/products/product-card";
@@ -69,7 +70,10 @@ export default function HomePage() {
             </li>
             <li className="rounded-xl border border-soil/10 bg-cream-2 px-5 py-4">
               <strong className="block text-soil">Own delivery fleet</strong>
-              Auckland &amp; Hamilton, scheduled runs
+              <Link href="/areas" className="text-forest underline-offset-2 hover:underline">
+                Auckland, Hamilton &amp; Waikato
+              </Link>
+              , scheduled runs
             </li>
             <li className="rounded-xl border border-soil/10 bg-cream-2 px-5 py-4">
               <strong className="block text-soil">Trade pack sizes</strong>
@@ -125,6 +129,7 @@ export default function HomePage() {
       </section>
 
       <WhyChooseUs />
+      <Testimonials />
       <ServicesPreview />
       <NzSection />
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/shared/page-hero";
 import { ServiceDetail } from "@/components/services/service-detail";
 import { ProcessSection } from "@/components/services/process-section";
+import { Testimonials } from "@/components/home/testimonials";
 import { CtaBanner } from "@/components/shared/cta-banner";
 import { Container } from "@/components/ui/container";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
@@ -38,6 +39,7 @@ export default function ServicesPage() {
       </Container>
       <ServiceDetail />
       <ProcessSection />
+      <Testimonials />
       <section className="bg-cream-2 py-20">
         <Container className="max-w-4xl">
           <h2 className="font-display text-[28px] font-bold text-soil sm:text-[34px]">
