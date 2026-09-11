@@ -86,6 +86,9 @@ export const metadata: Metadata = {
     description: siteConfig.description,
   },
   formatDetection: { telephone: true, email: true, address: true },
+  verification: {
+    google: "HLQyZ1HQ5Xwc0va4YD3AET3HQtxiULFN9QamV9AvSMk",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
