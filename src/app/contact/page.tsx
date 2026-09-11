@@ -3,12 +3,15 @@ import { PageHero } from "@/components/shared/page-hero";
 import { Container } from "@/components/ui/container";
 import { ContactInfo } from "@/components/contact/contact-info";
 import { EnquiryForm } from "@/components/forms/enquiry-form";
+import { Breadcrumbs } from "@/components/seo/breadcrumbs";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact",
+export const metadata: Metadata = buildMetadata({
+  title: "Contact VegieFresh — Order Fresh Produce in Auckland & Hamilton",
   description:
-    "Get in touch about your produce requirements. Based in Pukekohe, supplying Auckland and Hamilton.",
-};
+    "Call 021 0825 6766 or send an enquiry to set up wholesale vegetable delivery for your restaurant or cafe. Based in Pukekohe, supplying Auckland and Hamilton.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (
@@ -20,7 +23,10 @@ export default function ContactPage() {
         imageKey="contactBanner"
       />
 
-      <Container className="grid grid-cols-1 gap-12 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16 lg:py-20">
+      <Container className="pt-8">
+        <Breadcrumbs items={[{ name: "Contact", path: "/contact" }]} />
+      </Container>
+      <Container className="grid grid-cols-1 gap-12 py-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16 lg:py-16">
         <ContactInfo />
 
         <div className="rounded-2xl border border-soil/10 bg-white p-6 sm:p-9">

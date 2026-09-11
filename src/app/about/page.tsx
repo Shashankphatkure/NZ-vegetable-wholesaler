@@ -7,12 +7,17 @@ import { PageHero } from "@/components/shared/page-hero";
 import { Timeline } from "@/components/marketing/timeline";
 import { CtaBanner } from "@/components/shared/cta-banner";
 import { siteConfig } from "@/lib/site-config";
+import { buildMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/seo/breadcrumbs";
+import { BusinessDetails } from "@/components/about/business-details";
 
-export const metadata: Metadata = {
-  title: "About Us",
+export const metadata: Metadata = buildMetadata({
+  title: "About VegieFresh — Pukekohe Fresh Produce Supplier",
   description:
-    "Built from more than a decade of hands-on New Zealand agricultural and food-industry experience.",
-};
+    "VegieFresh was founded in 2022 by Satwant Singh after more than a decade in NZ orchards, packhouses and food processing. Wholesale vegetables from Pukekohe to Auckland and Hamilton.",
+  path: "/about",
+  keywords: ["about VegieFresh", "Pukekohe produce supplier", "Satwant Singh VegieFresh"],
+});
 
 const timelineItems = [
   {
@@ -65,7 +70,11 @@ export default function AboutPage() {
         imageKey="heroAbout"
       />
 
-      <section className="py-20 lg:py-28">
+      <Container className="pt-8">
+        <Breadcrumbs items={[{ name: "About Us", path: "/about" }]} />
+      </Container>
+
+      <section className="py-16 lg:py-24">
         <Container className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
           <FadeUp>
             <SectionHeading eyebrow="Founder Story" title={siteConfig.founder} />
@@ -105,6 +114,10 @@ export default function AboutPage() {
           </FadeUp>
         </Container>
       </section>
+
+      <BusinessDetails />
+
+      <BusinessDetails />
 
       <section className="bg-forest py-20 text-cream lg:py-28">
         <Container>

@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: `How ${siteConfig.name} collects, uses and protects your information.`,
+  alternates: { canonical: `${siteConfig.url}/privacy` },
 };
 
 const sections: LegalSection[] = [

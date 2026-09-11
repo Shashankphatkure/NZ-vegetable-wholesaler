@@ -5,6 +5,8 @@ import { siteConfig } from "@/lib/site-config";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { MobileCtaBar } from "@/components/layout/mobile-cta-bar";
+import { JsonLd } from "@/components/seo/json-ld";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -31,19 +33,59 @@ const fraunces = Fraunces({
   weight: ["500"],
 });
 
+const defaultTitle = `${siteConfig.name} | ${siteConfig.tagline}`;
+
+// Preview deployments (Vercel "preview" env) must never be indexed — the SEO
+// audit found the preview host competing with the live domain.
+const isPreview = process.env.VERCEL_ENV === "preview";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Fresh Produce Supplier, Pukekohe NZ`,
+    default: defaultTitle,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  applicationName: siteConfig.name,
+  keywords: [
+    "fresh produce supplier Pukekohe",
+    "vegetable wholesaler Auckland",
+    "restaurant produce supply NZ",
+    "wholesale vegetables Hamilton",
+    "fresh vegetable delivery Auckland cafes restaurants",
+  ],
+  authors: [{ name: siteConfig.founder }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  category: "Food & Beverage Wholesale",
+  alternates: { canonical: siteConfig.url },
+  robots: isPreview
+    ? { index: false, follow: false }
+    : {
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+          "max-video-preview": -1,
+        },
+      },
   openGraph: {
-    title: `${siteConfig.name} | Fresh Produce Supplier, Pukekohe NZ`,
+    title: defaultTitle,
     description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
     locale: "en_NZ",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: defaultTitle,
+    description: siteConfig.description,
+  },
+  formatDetection: { telephone: true, email: true, address: true },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -53,6 +95,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${manrope.variable} ${inter.variable} ${spaceMono.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-cream text-soil">
+        <JsonLd data={[organizationSchema(), websiteSchema()]} />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

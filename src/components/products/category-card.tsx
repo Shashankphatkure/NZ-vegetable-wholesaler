@@ -5,7 +5,7 @@ import type { Category } from "@/lib/types";
 export function CategoryCard({ category }: { category: Category }) {
   return (
     <Link
-      href={`/shop?category=${category.slug}`}
+      href={`/shop/category/${category.slug}`}
       className="group relative flex aspect-[3/4] flex-col justify-end overflow-hidden rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_44px_-18px_rgba(23,60,44,0.32)]"
     >
       <ProduceImage

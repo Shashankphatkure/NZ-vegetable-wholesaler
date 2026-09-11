@@ -1,38 +1,37 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 import { Search } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { ProductCard } from "@/components/products/product-card";
-import { products } from "@/lib/data/products";
 import { categories } from "@/lib/data/categories";
 import { cn } from "@/lib/utils";
-import type { CategorySlug } from "@/lib/types";
+import type { CategorySlug, Product } from "@/lib/types";
 
-export function ShopGrid() {
-  const searchParams = useSearchParams();
-  const initialCategory = searchParams.get("category") as CategorySlug | null;
-
+// The product list is passed in from the server page and rendered on the
+// first paint, so the full catalogue is in the HTML for crawlers. The search
+// box is a progressive enhancement on top of that. Category filtering is a
+// real navigation to /shop/category/[slug] (each is its own indexable page)
+// rather than client state.
+export function ShopGrid({
+  products,
+  activeCategory = "all",
+}: {
+  products: Product[];
+  activeCategory?: CategorySlug | "all";
+}) {
   const [query, setQuery] = useState("");
-  const [activeCategory, setActiveCategory] = useState<CategorySlug | "all">(
-    initialCategory && categories.some((c) => c.slug === initialCategory)
-      ? initialCategory
-      : "all",
-  );
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return products.filter((product) => {
-      const matchesCategory =
-        activeCategory === "all" || product.category === activeCategory;
-      const matchesQuery =
-        q.length === 0 ||
+    if (q.length === 0) return products;
+    return products.filter(
+      (product) =>
         product.name.toLowerCase().includes(q) ||
-        product.description.toLowerCase().includes(q);
-      return matchesCategory && matchesQuery;
-    });
-  }, [query, activeCategory]);
+        product.description.toLowerCase().includes(q),
+    );
+  }, [query, products]);
 
   return (
     <Container className="py-16 lg:py-20">
@@ -53,23 +52,20 @@ export function ShopGrid() {
         </p>
       </div>
 
-      <div className="mt-6 flex flex-wrap gap-2.5" role="group" aria-label="Filter by category">
-        <FilterChip
-          active={activeCategory === "all"}
-          onClick={() => setActiveCategory("all")}
-        >
+      <nav className="mt-6 flex flex-wrap gap-2.5" aria-label="Browse by category">
+        <FilterChip href="/shop" active={activeCategory === "all"}>
           All
         </FilterChip>
         {categories.map((category) => (
           <FilterChip
             key={category.slug}
+            href={`/shop/category/${category.slug}`}
             active={activeCategory === category.slug}
-            onClick={() => setActiveCategory(category.slug)}
           >
             {category.name}
           </FilterChip>
         ))}
-      </div>
+      </nav>
 
       {filtered.length > 0 ? (
         <div className="mt-10 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
@@ -83,7 +79,7 @@ export function ShopGrid() {
             No produce matches that search
           </p>
           <p className="text-[15px] text-soil/60">
-            Try a different term, or clear the category filter.
+            Try a different term, or browse a category above.
           </p>
         </div>
       )}
@@ -93,18 +89,17 @@ export function ShopGrid() {
 
 function FilterChip({
   active,
-  onClick,
+  href,
   children,
 }: {
   active: boolean;
-  onClick: () => void;
+  href: string;
   children: React.ReactNode;
 }) {
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-pressed={active}
+    <Link
+      href={href}
+      aria-current={active ? "page" : undefined}
       className={cn(
         "font-label rounded-full border px-4 py-2 text-[12px] tracking-[0.08em] uppercase transition-colors",
         active
@@ -113,6 +108,6 @@ function FilterChip({
       )}
     >
       {children}
-    </button>
+    </Link>
   );
 }
