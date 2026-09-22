@@ -17,9 +17,9 @@ const topicalPosts: Post[] = [
     imageKey: "heroHome",
     readingMinutes: 6,
     keywords: [
-      "fresh produce supplier Auckland",
+      "how to choose a wholesale vegetable supplier",
       "restaurant vegetable supplier NZ",
-      "how to choose a produce wholesaler",
+      "wholesale vegetable supplier Auckland",
     ],
     keyTakeaway:
       "The best fresh produce supplier for a restaurant is the one that delivers consistently on the days you need, sources from NZ growers close to your region, packs in sizes that match your volume, and picks up the phone when something goes wrong. In Auckland and Hamilton, a Pukekohe-based supplier has a natural advantage on freshness because the produce is grown minutes from the depot.",
@@ -206,7 +206,7 @@ const topicalPosts: Post[] = [
     keywords: [
       "Agria vs Moonlight potatoes",
       "best potato for chips NZ",
-      "wholesale potatoes Auckland",
+      "Agria potatoes restaurant",
     ],
     keyTakeaway:
       "Order Agria potatoes for chips, fries, roasting and mash — its high dry-matter, floury flesh fries crisp and mashes smooth. Order Moonlight potatoes for potato salad, boiling, gratins and anything where slices need to hold together. Most restaurants run both: Agria in 10kg or 20kg cases for the fryer, Moonlight in 10kg for cold prep.",
@@ -443,7 +443,7 @@ const topicalPosts: Post[] = [
     imageKey: "heroServices",
     readingMinutes: 4,
     keywords: [
-      "fresh produce delivery Auckland",
+      "restaurant vegetable delivery",
       "vegetable delivery Hamilton restaurants",
       "wholesale vegetable delivery NZ",
     ],

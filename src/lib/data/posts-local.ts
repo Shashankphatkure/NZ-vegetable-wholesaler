@@ -14,8 +14,8 @@ export const localPosts: Post[] = [
     imageKey: "heroServices",
     readingMinutes: 5,
     keywords: [
-      "produce supplier Hamilton",
-      "vegetable wholesaler Waikato",
+      "choosing a produce supplier Hamilton",
+      "Waikato restaurant produce buying guide",
       "fresh vegetable delivery Hamilton restaurants",
     ],
     keyTakeaway:
@@ -163,9 +163,9 @@ export const localPosts: Post[] = [
     imageKey: "catRoots",
     readingMinutes: 5,
     keywords: [
-      "produce supplier South Auckland",
-      "vegetable supplier Manukau",
-      "wholesale onions garlic ginger Papatoetoe",
+      "choosing a produce supplier South Auckland",
+      "restaurant vegetable delivery Papatoetoe",
+      "wholesale onions garlic ginger Manurewa",
     ],
     keyTakeaway:
       "South Auckland kitchens — Manukau, Papatoetoe, Otahuhu, Mangere, Manurewa and Papakura — are 20–35 minutes from the Pukekohe growing district, so a Pukekohe-based supplier can deliver next-day and often same-day top-ups. Look for a supplier that stocks the high-volume lines the area's Indian, Chinese, Pacific and takeaway kitchens actually use: onions in 20kg sacks, fresh garlic and ginger, coriander, cabbage, daikon and potatoes.",

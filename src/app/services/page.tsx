@@ -13,14 +13,15 @@ import { buildMetadata } from "@/lib/seo";
 import { faqGroups } from "@/lib/data/faqs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Wholesale Produce Supply & Delivery — Auckland & Hamilton",
+  title: "Wholesale Produce Supply & Delivery — Auckland",
   description:
     "Wholesale vegetable supply, bulk orders and scheduled business delivery for restaurants, cafes and caterers across Auckland and Hamilton, from our Pukekohe depot.",
   path: "/services",
   keywords: [
-    "wholesale produce delivery Auckland",
-    "restaurant vegetable supply Hamilton",
+    "wholesale produce delivery service Auckland",
     "bulk vegetable orders NZ",
+    "scheduled produce delivery Hamilton",
+    "commercial produce supply NZ",
   ],
 });
 

@@ -47,13 +47,8 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  keywords: [
-    "fresh produce supplier Pukekohe",
-    "vegetable wholesaler Auckland",
-    "restaurant produce supply NZ",
-    "wholesale vegetables Hamilton",
-    "fresh vegetable delivery Auckland cafes restaurants",
-  ],
+  // No site-wide `keywords` fallback on purpose: it leaked commercial terms
+  // onto /privacy, /terms and the 404. Each route declares its own set.
   authors: [{ name: siteConfig.founder }],
   creator: siteConfig.name,
   publisher: siteConfig.name,

@@ -12,15 +12,19 @@ import { allFaqs } from "@/lib/data/faqs";
 import { itemListSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 
+// Catalogue hub. "wholesale vegetables Auckland" now belongs to
+// /shop/category/other-vegetables, so this page targets catalogue and
+// price-list intent instead of competing with its own children.
 export const metadata: Metadata = buildMetadata({
-  title: "Wholesale Vegetables & Fresh Produce Catalogue",
+  title: "Wholesale Produce Catalogue & Price List",
   description:
-    "Browse our wholesale fresh produce range: potatoes, onions, tomatoes, roots, greens, herbs and more. Supplied from Pukekohe to restaurants and cafes across Auckland and Hamilton.",
+    "Browse the full wholesale produce range — potatoes, onions, tomatoes, roots, greens and herbs — supplied from Pukekohe to Auckland and Hamilton kitchens.",
   path: "/shop",
   keywords: [
-    "wholesale vegetables Auckland",
-    "fresh produce catalogue NZ",
-    "restaurant vegetable supplier",
+    "wholesale produce catalogue NZ",
+    "fresh produce price list Auckland",
+    "commercial vegetable range NZ",
+    "trade pack sizes vegetables NZ",
   ],
 });
 
@@ -44,7 +48,7 @@ export default function ShopPage() {
       />
       <PageHero
         eyebrow="Shop"
-        title="Our Produce"
+        title="Wholesale Fresh Produce Catalogue"
         supporting="Quality fresh vegetables supplied for restaurants, cafes, food businesses and commercial kitchens across Auckland and Hamilton."
         imageKey="heroShop"
       />

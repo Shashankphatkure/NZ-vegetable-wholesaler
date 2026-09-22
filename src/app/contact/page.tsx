@@ -7,10 +7,15 @@ import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact VegieFresh — Order Fresh Produce in Auckland & Hamilton",
+  title: "Contact Us — Order Produce for Auckland & Hamilton",
   description:
     "Call 021 0825 6766 or send an enquiry to set up wholesale vegetable delivery for your restaurant or cafe. Based in Pukekohe, supplying Auckland and Hamilton.",
   path: "/contact",
+  keywords: [
+    "order wholesale vegetables Auckland",
+    "produce supplier contact Pukekohe",
+    "request produce price list NZ",
+  ],
 });
 
 export default function ContactPage() {

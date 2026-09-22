@@ -9,14 +9,17 @@ import { faqGroups, allFaqs } from "@/lib/data/faqs";
 import { faqSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 
+// Primary intent: "fresh produce delivery Auckland". The delivery how-it-works
+// blog post was moved off this term so the two stop competing.
 export const metadata: Metadata = buildMetadata({
-  title: "FAQ — Delivery Areas, Pack Sizes & Ordering",
+  title: "Fresh Produce Delivery FAQ — Auckland & Hamilton",
   description:
-    "Answers to common questions about VegieFresh: where we deliver in Auckland and Hamilton, pack sizes for potatoes and onions, minimum orders, and how to set up an account.",
+    "Answers about VegieFresh wholesale produce: delivery areas, pack sizes, vegetables, ordering, sourcing and supply for Auckland and Hamilton businesses.",
   path: "/faq",
   keywords: [
-    "produce supplier FAQ",
-    "vegetable delivery Auckland questions",
+    "fresh produce delivery Auckland",
+    "wholesale produce FAQ",
+    "vegetable delivery Hamilton questions",
     "wholesale vegetable pack sizes",
   ],
 });
@@ -28,7 +31,7 @@ export default function FaqPage() {
       <JsonLd data={faqSchema(allFaqs)} />
       <PageHero
         eyebrow="FAQ"
-        title="Questions we get asked most"
+        title="Fresh Produce Supplier FAQs"
         supporting="Delivery areas, pack sizes, pricing and how ordering works — answered plainly."
       />
       <Container className="py-12 lg:py-16">

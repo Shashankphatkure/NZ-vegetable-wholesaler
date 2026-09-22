@@ -27,15 +27,14 @@ export async function generateMetadata({
   const { category: slug } = await params;
   const category = getCategory(slug);
   if (!category) return {};
+  // Each category owns one product-level commercial query from the audit's
+  // master keyword map, so title/H1/keywords are authored per category rather
+  // than generated from the display name.
   return buildMetadata({
-    title: `Wholesale ${category.name} Supplier — Auckland & Hamilton`,
+    title: category.seoTitle,
     description: category.seoDescription,
     path: `/shop/category/${category.slug}`,
-    keywords: [
-      `wholesale ${category.name.toLowerCase()} Auckland`,
-      `${category.name.toLowerCase()} supplier Pukekohe`,
-      `restaurant ${category.name.toLowerCase()} supply NZ`,
-    ],
+    keywords: category.keywords,
   });
 }
 
@@ -60,7 +59,7 @@ export default async function CategoryPage({
       />
       <PageHero
         eyebrow="Shop"
-        title={`Wholesale ${category.name}`}
+        title={category.h1}
         supporting={category.blurb}
         imageKey={category.imageKey}
       />
@@ -74,7 +73,7 @@ export default async function CategoryPage({
         />
         <div className="mt-8 max-w-3xl">
           <h2 className="font-display text-[24px] font-bold text-soil sm:text-[28px]">
-            {category.name} for restaurants, cafes and commercial kitchens
+            {category.h1} for restaurants, cafes and commercial kitchens
           </h2>
           <p className="mt-4 text-[16px] leading-relaxed text-soil/70">
             {category.intro}

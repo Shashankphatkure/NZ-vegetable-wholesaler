@@ -18,7 +18,7 @@ export function ServicesPreview() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading
             eyebrow="What We Do"
-            title="Built around your kitchen's supply needs"
+            title="Fresh produce delivery across Auckland and Hamilton"
           />
           <Button href="/services" variant="ghost" className="shrink-0">
             Explore Our Services
