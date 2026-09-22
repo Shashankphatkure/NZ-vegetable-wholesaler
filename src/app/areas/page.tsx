@@ -15,9 +15,15 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = buildMetadata({
   title: "Delivery Areas — Auckland, Hamilton & Waikato",
   description:
-    "Where VegieFresh delivers fresh wholesale vegetables: Auckland, South Auckland, Manukau, Pukekohe & Franklin, Hamilton and the Waikato. Scheduled runs from our Pukekohe depot.",
+    "Where VegieFresh delivers wholesale vegetables: Auckland, South Auckland, Manukau, Pukekohe, Hamilton and the Waikato — on scheduled runs from Pukekohe.",
   path: "/areas",
-  keywords: ["vegetable delivery areas Auckland", "produce supplier Hamilton", "wholesale vegetables Waikato"],
+  // Hub page only — each individual area's primary keyword is owned by its
+  // own landing page, so none of them are repeated here.
+  keywords: [
+    "wholesale vegetable delivery areas NZ",
+    "produce delivery Auckland Waikato",
+    "vegetable supplier service areas Pukekohe",
+  ],
 });
 
 export default function AreasPage() {
@@ -31,7 +37,7 @@ export default function AreasPage() {
       />
       <PageHero
         eyebrow="Delivery Areas"
-        title="Where we deliver"
+        title="Wholesale Produce Delivery Areas"
         supporting="Scheduled produce runs from Pukekohe across Auckland, Hamilton and the Waikato — with our own fleet."
         imageKey="nzLandscape"
       />

@@ -12,6 +12,18 @@ export interface Category {
   name: string;
   imageKey: string;
   blurb: string;
+  /**
+   * The single commercial query this page is built to win. Per the Sept 2026
+   * SEO audit, exactly one page may claim a given primary keyword — check the
+   * area pages and blog posts before reusing one here.
+   */
+  primaryKeyword: string;
+  /** Title tag body. The root layout template appends "| VegieFresh". */
+  seoTitle: string;
+  /** Page H1 — deliberately not always `name` (e.g. Roots → Root Vegetables). */
+  h1: string;
+  /** Supporting terms for this page only, primary keyword first. */
+  keywords: string[];
   /** Longer SEO intro rendered on the category landing page. */
   intro: string;
   /** Meta description for the category landing page. */

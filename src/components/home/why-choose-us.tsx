@@ -39,7 +39,7 @@ export function WhyChooseUs() {
       <Container className="relative">
         <SectionHeading
           eyebrow="Why Choose Us"
-          title="Grounded in real industry experience"
+          title="Why kitchens choose VegieFresh"
           align="center"
           tone="cream"
           className="mx-auto"

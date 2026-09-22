@@ -23,16 +23,21 @@ import { homeFaqs } from "@/lib/data/faqs";
 import { siteConfig } from "@/lib/site-config";
 import { buildMetadata } from "@/lib/seo";
 
+// Primary intent (SEO audit, Sept 2026): "wholesale fresh produce supplier
+// Auckland". Product-level and location-level queries belong to the category
+// and area pages, so they are deliberately absent here.
 export const metadata: Metadata = buildMetadata({
-  title: `${siteConfig.name} | Fresh Produce Supplier, Pukekohe NZ — Auckland & Hamilton Delivery`,
-  description: siteConfig.description,
+  title: `Wholesale Fresh Produce Supplier Auckland & Hamilton | ${siteConfig.name}`,
+  description:
+    "Wholesale fresh vegetables supplied to restaurants, cafes, caterers and commercial kitchens across Auckland and Hamilton. Pukekohe-based delivery.",
   path: "/",
   absoluteTitle: true,
   keywords: [
-    "fresh produce supplier Pukekohe",
-    "vegetable wholesaler Auckland",
-    "restaurant produce supply NZ",
-    "wholesale vegetables Hamilton",
+    "wholesale fresh produce supplier Auckland",
+    "fresh vegetable supplier Auckland",
+    "wholesale vegetables Auckland",
+    "wholesale produce supplier Hamilton",
+    "commercial kitchen vegetable supplier NZ",
   ],
 });
 
@@ -50,8 +55,7 @@ export default function HomePage() {
       <section className="bg-white py-14 lg:py-16">
         <Container className="max-w-4xl">
           <h2 className="font-display text-[26px] leading-tight font-bold text-soil sm:text-[32px]">
-            Wholesale fresh vegetable supplier in Pukekohe, delivering to
-            Auckland and Hamilton
+            Fresh vegetables for restaurants and commercial kitchens
           </h2>
           <p className="mt-5 text-[17px] leading-relaxed text-soil/75">
             {siteConfig.name} is a Pukekohe-based fresh produce supplier for
@@ -90,7 +94,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading
               eyebrow="Our Range"
-              title="Fresh produce for busy kitchens"
+              title="Wholesale vegetables, herbs and greens"
               supporting="Seven core categories, sourced and packed for restaurants, cafes and commercial kitchens."
             />
             <Button href="/shop" variant="ghost" className="shrink-0">
@@ -112,7 +116,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading
               eyebrow="Featured"
-              title="A closer look at what we supply"
+              title="Wholesale fresh produce from Pukekohe"
             />
             <Button href="/shop" variant="ghost" className="shrink-0">
               View Full Catalogue

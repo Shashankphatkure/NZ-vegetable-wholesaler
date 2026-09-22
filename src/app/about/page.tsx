@@ -11,12 +11,20 @@ import { buildMetadata } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { BusinessDetails } from "@/components/about/business-details";
 
+// Primary intent: "fresh produce supplier Pukekohe", framed around the brand
+// so /areas/pukekohe keeps the purely commercial version of that query.
 export const metadata: Metadata = buildMetadata({
-  title: "About VegieFresh — Pukekohe Fresh Produce Supplier",
+  title: "About VegieFresh | Fresh Produce Supplier Pukekohe NZ",
   description:
-    "VegieFresh was founded in 2022 by Satwant Singh after more than a decade in NZ orchards, packhouses and food processing. Wholesale vegetables from Pukekohe to Auckland and Hamilton.",
+    "A Pukekohe-based fresh produce supplier founded in 2022 by Satwant Singh, serving restaurants, cafes and commercial kitchens across Auckland and Hamilton.",
   path: "/about",
-  keywords: ["about VegieFresh", "Pukekohe produce supplier", "Satwant Singh VegieFresh"],
+  absoluteTitle: true,
+  keywords: [
+    "about VegieFresh",
+    "Pukekohe vegetable supplier",
+    "produce supplier NZ",
+    "fresh produce supplier Pukekohe",
+  ],
 });
 
 const timelineItems = [
@@ -65,8 +73,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About Us"
-        title="Built from experience. Driven by quality."
-        supporting="More than a decade of hands-on New Zealand agricultural and food-industry experience, behind every order."
+        title="About VegieFresh"
+        supporting="Built from experience, driven by quality — a Pukekohe fresh produce supplier for restaurants, cafes and commercial kitchens across Auckland and Hamilton."
         imageKey="heroAbout"
       />
 
@@ -114,8 +122,6 @@ export default function AboutPage() {
           </FadeUp>
         </Container>
       </section>
-
-      <BusinessDetails />
 
       <BusinessDetails />
 

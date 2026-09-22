@@ -30,16 +30,14 @@ export async function generateMetadata({
   const { area: slug } = await params;
   const area = getArea(slug);
   if (!area) return {};
+  // Title, H1 and keywords come from the area record rather than a shared
+  // template: Auckland, South Auckland and Manukau were the audit's biggest
+  // duplicate-content risk, so each now states a distinct search intent.
   return buildMetadata({
-    title: `Fresh Produce & Vegetable Supplier ${area.name}`,
+    title: area.seoTitle,
     description: area.seoDescription,
     path: `/areas/${area.slug}`,
-    keywords: [
-      `vegetable supplier ${area.name}`,
-      `fresh produce supplier ${area.name}`,
-      `wholesale vegetables ${area.name}`,
-      `restaurant produce delivery ${area.name}`,
-    ],
+    keywords: area.keywords,
   });
 }
 
@@ -59,7 +57,7 @@ export default async function AreaPage({
       <JsonLd data={areaServiceSchema(area)} />
       <PageHero
         eyebrow={`Delivery Area · ${area.region}`}
-        title={`Fresh produce supplier for ${area.name}`}
+        title={area.h1}
         supporting={`Wholesale vegetables delivered to restaurants, cafes and food businesses across ${area.name} from our depot in Pukekohe.`}
         imageKey={area.imageKey}
       />

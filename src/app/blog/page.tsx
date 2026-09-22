@@ -9,15 +9,18 @@ import { getSortedPosts } from "@/lib/data/posts";
 import { itemListSchema } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 
+// Primary intent: "wholesale fresh produce guides" — an informational hub, so
+// it stays off the commercial supplier terms owned by the area pages.
 export const metadata: Metadata = buildMetadata({
-  title: "Produce Guides & Kitchen Resources",
+  title: "Fresh Produce & Wholesale Vegetable Insights",
   description:
-    "Seasonal produce guides, buying advice and storage tips for New Zealand restaurants and cafes, from a Pukekohe-based wholesale vegetable supplier.",
+    "Guides and insights for restaurants, cafes and commercial kitchens covering wholesale vegetables, fresh produce supply, ordering and delivery.",
   path: "/blog",
   keywords: [
-    "NZ produce guide",
-    "restaurant vegetable buying guide",
-    "seasonal vegetables New Zealand",
+    "wholesale fresh produce guides",
+    "restaurant produce supplier",
+    "wholesale vegetable buying guide NZ",
+    "commercial kitchen produce advice",
   ],
 });
 
@@ -34,7 +37,7 @@ export default function BlogIndexPage() {
       />
       <PageHero
         eyebrow="Blog"
-        title="Produce guides for busy kitchens"
+        title="Fresh Produce & Wholesale Vegetable Insights"
         supporting="Seasonal guides, buying advice and storage tips written from the depot floor in Pukekohe."
       />
       <Container className="py-12 lg:py-16">

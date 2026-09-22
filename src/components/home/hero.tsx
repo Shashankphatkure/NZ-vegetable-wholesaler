@@ -9,15 +9,19 @@ export function Hero() {
     <section className="hero-wash relative overflow-hidden lg:flex lg:min-h-[calc(100svh-76px)] lg:flex-col lg:justify-center">
       <Container className="relative grid grid-cols-1 gap-12 py-16 lg:grid-cols-[1.05fr_1fr] lg:items-stretch lg:gap-8 lg:py-12">
         <div className="relative z-10 flex flex-col items-start justify-center lg:h-full">
-          <Eyebrow>Fresh Produce · New Zealand</Eyebrow>
-          <h1 className="mt-6 text-[42px] leading-[1.05] font-extrabold text-soil sm:text-[56px] lg:text-[48px] xl:text-[56px]">
-            Fresh produce.
-            <br />
-            <span className="font-accent text-leaf">Delivered with confidence.</span>
+          <Eyebrow>Wholesale Produce · Pukekohe, NZ</Eyebrow>
+          {/* Descriptive commercial H1, not a brand slogan — the SEO audit's
+              first Phase 1 fix. Wraps naturally rather than on a forced break
+              so the longer line still fits the column at every width. */}
+          <h1 className="mt-6 text-[34px] leading-[1.08] font-extrabold text-soil sm:text-[46px] lg:text-[40px] xl:text-[48px]">
+            Wholesale fresh produce supplier{" "}
+            <span className="font-accent text-leaf">
+              in Auckland &amp; Hamilton
+            </span>
           </h1>
           <p className="mt-6 max-w-lg text-[17px] leading-relaxed text-soil/70 lg:text-base xl:text-lg">
-            Quality vegetables supplied to restaurants, cafes and food
-            businesses across New Zealand.
+            Quality fresh vegetables supplied to restaurants, cafes, caterers
+            and commercial kitchens — delivered from our Pukekohe depot.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <Button href="/shop" variant="primary" size="lg">

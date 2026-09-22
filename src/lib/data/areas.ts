@@ -14,6 +14,18 @@ export interface ServiceArea {
   distanceKm: number;
   driveTime: string;
   imageKey: string;
+  /**
+   * The single commercial query this page is built to win. Per the Sept 2026
+   * SEO audit, exactly one page may claim a given primary keyword — Auckland,
+   * South Auckland and Manukau are deliberately split so they stop competing.
+   */
+  primaryKeyword: string;
+  /** Title tag body. The root layout template appends "| VegieFresh". */
+  seoTitle: string;
+  /** Page H1 — descriptive and commercial, not just the place name. */
+  h1: string;
+  /** Supporting terms for this page only, primary keyword first. */
+  keywords: string[];
   /** Meta description. */
   seoDescription: string;
   /** Direct-answer opening paragraph. */
@@ -38,8 +50,17 @@ export const areas: ServiceArea[] = [
     driveTime: "45–60 minutes",
     imageKey: "heroHome",
     placeType: "City",
+    primaryKeyword: "fresh produce supplier Auckland",
+    seoTitle: "Fresh Produce Supplier Auckland | Wholesale Vegetables",
+    h1: "Fresh Produce Supplier for Auckland",
+    keywords: [
+      "fresh produce supplier Auckland",
+      "wholesale vegetable supplier Auckland",
+      "restaurant vegetable delivery Auckland",
+      "cafe produce supplier Auckland",
+    ],
     seoDescription:
-      "Wholesale vegetable supplier delivering to Auckland restaurants, cafes and caterers. Fresh produce from Pukekohe growers, delivered on scheduled runs across the city.",
+      "Fresh produce supplier for Auckland restaurants, cafes and caterers. Wholesale vegetables from Pukekohe growers, delivered on scheduled runs across the city.",
     summary:
       "VegieFresh supplies fresh vegetables to restaurants, cafes, takeaways and caterers across Auckland, delivered with our own fleet from our depot in Pukekohe — about 50km south of the CBD. Because most of our potatoes, onions and greens are grown minutes from the depot, produce reaches Auckland kitchens a day or two out of the ground.",
     suburbs: [
@@ -111,8 +132,17 @@ export const areas: ServiceArea[] = [
     driveTime: "20–35 minutes",
     imageKey: "catOnions",
     placeType: "AdministrativeArea",
+    primaryKeyword: "fresh produce supplier South Auckland",
+    seoTitle: "Fresh Produce Supplier South Auckland",
+    h1: "Fresh Produce Supplier for South Auckland",
+    keywords: [
+      "fresh produce supplier South Auckland",
+      "wholesale vegetables South Auckland",
+      "produce delivery Papatoetoe Manurewa",
+      "takeaway vegetable supplier South Auckland",
+    ],
     seoDescription:
-      "Fresh produce supplier for South Auckland restaurants, cafes and takeaways — Manukau, Papatoetoe, Manurewa, Papakura, Otahuhu and Mangere. Delivered from Pukekohe.",
+      "Fresh produce supplier for South Auckland restaurants, cafes and takeaways — Papatoetoe, Manurewa, Papakura, Otahuhu and Mangere. Delivered from Pukekohe.",
     summary:
       "South Auckland is the closest part of the city to our Pukekohe depot, so it's our most frequent run. VegieFresh supplies restaurants, cafes, takeaways, dairies and caterers across Manukau, Papatoetoe, Manurewa, Papakura, Otahuhu, Mangere and the surrounding suburbs with fresh vegetables grown in the district next door.",
     suburbs: [
@@ -171,6 +201,15 @@ export const areas: ServiceArea[] = [
     driveTime: "25–35 minutes",
     imageKey: "heroShop",
     placeType: "City",
+    primaryKeyword: "vegetable supplier Manukau",
+    seoTitle: "Wholesale Vegetable Supplier Manukau | Fresh Produce",
+    h1: "Wholesale Vegetable Supplier for Manukau",
+    keywords: [
+      "vegetable supplier Manukau",
+      "wholesale vegetables Manukau",
+      "produce delivery Wiri Otara Botany",
+      "restaurant vegetable supplier Manukau",
+    ],
     seoDescription:
       "Wholesale vegetable supplier in Manukau. Fresh potatoes, onions, tomatoes, greens and herbs delivered to Manukau restaurants, cafes and takeaways from Pukekohe.",
     summary:
@@ -219,8 +258,17 @@ export const areas: ServiceArea[] = [
     driveTime: "local",
     imageKey: "storySection",
     placeType: "City",
+    primaryKeyword: "fresh produce supplier Pukekohe",
+    seoTitle: "Fresh Produce Supplier Pukekohe & Franklin",
+    h1: "Fresh Produce Supplier for Pukekohe & Franklin",
+    keywords: [
+      "fresh produce supplier Pukekohe",
+      "vegetable supplier Franklin",
+      "wholesale vegetables Waiuku Tuakau",
+      "local produce supplier Pukekohe",
+    ],
     seoDescription:
-      "Local fresh produce supplier in Pukekohe. VegieFresh supplies restaurants, cafes and takeaways across Pukekohe, Waiuku, Tuakau, Pokeno, Bombay and the Franklin district.",
+      "Local fresh produce supplier in Pukekohe — supplying restaurants, cafes and takeaways across Pukekohe, Waiuku, Tuakau, Pokeno, Bombay and the Franklin district.",
     summary:
       "VegieFresh is based in Pukekohe, and we supply the cafes, restaurants, takeaways and caterers of Pukekohe and the wider Franklin district — Waiuku, Tuakau, Pokeno, Bombay, Buckland, Patumahoe and Clarks Beach — with vegetables grown, quite literally, down the road.",
     suburbs: [
@@ -270,8 +318,17 @@ export const areas: ServiceArea[] = [
     driveTime: "about 1 hour",
     imageKey: "heroServices",
     placeType: "City",
+    primaryKeyword: "fresh produce supplier Hamilton",
+    seoTitle: "Fresh Produce Supplier Hamilton | Wholesale Vegetables",
+    h1: "Fresh Produce Supplier for Hamilton",
+    keywords: [
+      "fresh produce supplier Hamilton",
+      "wholesale vegetables Hamilton",
+      "restaurant vegetable delivery Hamilton",
+      "cafe produce supplier Hamilton",
+    ],
     seoDescription:
-      "Wholesale vegetable supplier delivering to Hamilton restaurants, cafes and caterers. Fresh produce from Pukekohe growers, delivered on regular runs down the Waikato Expressway.",
+      "Fresh produce supplier for Hamilton restaurants, cafes and caterers. Wholesale vegetables from Pukekohe, delivered on regular runs down the Waikato Expressway.",
     summary:
       "VegieFresh delivers fresh wholesale vegetables to restaurants, cafes, takeaways and caterers across Hamilton — about 75km and an hour down the Waikato Expressway from our Pukekohe depot. Hamilton is on a regular run, not an occasional freight job, so Hamilton kitchens get the same scheduled service as Auckland.",
     suburbs: [
@@ -328,8 +385,17 @@ export const areas: ServiceArea[] = [
     driveTime: "1–1.5 hours",
     imageKey: "nzLandscape",
     placeType: "AdministrativeArea",
+    primaryKeyword: "wholesale vegetable supplier Waikato",
+    seoTitle: "Wholesale Vegetable Supplier Waikato | Fresh Produce",
+    h1: "Wholesale Fresh Produce Supplier for Waikato",
+    keywords: [
+      "wholesale vegetable supplier Waikato",
+      "fresh produce Waikato",
+      "vegetable delivery Cambridge Te Awamutu",
+      "commercial produce supplier Waikato",
+    ],
     seoDescription:
-      "Fresh produce supplier for Waikato food businesses — Hamilton, Cambridge, Te Awamutu, Huntly, Ngaruawahia and surrounding towns. Wholesale vegetables from Pukekohe.",
+      "Wholesale vegetable supplier for Waikato food businesses — Hamilton, Cambridge, Te Awamutu, Huntly and Ngaruawahia. Fresh produce delivered from Pukekohe.",
     summary:
       "VegieFresh supplies wholesale fresh vegetables to restaurants, cafes, takeaways and caterers across the Waikato — Hamilton, Cambridge, Te Awamutu, Huntly, Ngaruawahia, Morrinsville and surrounding towns — delivered from our depot in Pukekohe at the northern edge of the region.",
     suburbs: [
